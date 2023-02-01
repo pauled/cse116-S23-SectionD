@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cse116-S23-SectionD" target="1.18" />
+      <module name="cse116-S23-SectionD" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
