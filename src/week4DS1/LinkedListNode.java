@@ -14,6 +14,9 @@ public class LinkedListNode<T> {
     public T getValue(){
         return this.value;
     }
+    public void setNext(LinkedListNode<T> next){
+        this.next=next;
+    }
     public int size(){
         //returns the size of the linked list
         if (this.next==null){
