@@ -40,7 +40,6 @@ public class LinkedListOfDoubles {
         list.addDouble(1.0);
         list.addDouble(-1.0);
         list.addDouble(3.0);
-        String out=list.toString();
         double small=list.min();
     }
 }
