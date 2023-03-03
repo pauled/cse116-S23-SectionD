@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestLinkedList {
     public LinkedListNode<Integer> firstNSquares(int n){
+        //System.out.println("in firstNSquares");
         if (n<=0){
             return null;
         } else {
@@ -16,10 +17,16 @@ public class TestLinkedList {
     }
     private LinkedListNode<Integer> firstNSquaresHelper(int n,
                                                         LinkedListNode<Integer> list){
+        /*if (list!=null) {
+            System.out.println("in firstNSquaresHelper n:" + n + " list:" + list.toString());
+        } else {
+            System.out.println("in firstNSquaresHelper n:" + n + " list: null");
+        }*/
         if (n==1){
             return new LinkedListNode<>(1,list);
         } else {
-            return firstNSquaresHelper(n-1,new LinkedListNode<>(n*n,list));
+            int temp=n*n;
+            return firstNSquaresHelper(n,new LinkedListNode<>(temp,list));
         }
     }
     public <T> void compareLinkedLists(LinkedListNode<T> l1,
@@ -42,7 +49,7 @@ public class TestLinkedList {
     }
     @Test
     public void testLinkedListSizeDifference(){
-        LinkedListNode<Integer> computed=firstNSquares(4);
+        LinkedListNode<Integer> computed=firstNSquares(3);
         LinkedListNode<Integer> expected=new LinkedListNode<>(9,null);
         expected=new LinkedListNode<>(4,expected);
         expected=new LinkedListNode<>(1,expected);
