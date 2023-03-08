@@ -1,11 +1,12 @@
 package week6OOP2;
 
-public class Player {
+public class Player extends GameItem{
     private int maxHP;
     private int HP;
     private int damageDealt;
 
     public Player(int maxHP){
+        super(0,0);
         this.maxHP=maxHP;
         this.HP=maxHP;
         this.damageDealt=4;
@@ -30,7 +31,7 @@ public class Player {
     }
     public String toString(){
         String out="health: "+this.HP+"/";
-        out+=this.maxHP;
+        out+=this.maxHP+super.toString();
         return out;
     }
 

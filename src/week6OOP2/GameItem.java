@@ -14,4 +14,9 @@ public class GameItem {
         out+="  yLoc:"+this.yLoc;
         return out;
     }
+
+    public void move(int dx, int dy){
+        this.xLoc+=dx;
+        this.yLoc+=dy;
+    }
 }
