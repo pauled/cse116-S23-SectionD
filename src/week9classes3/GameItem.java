@@ -1,6 +1,6 @@
 package week9classes3;
 
-public class GameItem {
+public abstract class GameItem {
     protected double xLoc;
     protected double yLoc;
 
@@ -8,7 +8,7 @@ public class GameItem {
         this.xLoc=x;
         this.yLoc=y;
     }
-    public void use(Player player){}
+    //public abstract void use(Player player);
     public String toString(){
         String out=" xLoc:"+this.xLoc;
         out+=" yLoc:"+this.yLoc;

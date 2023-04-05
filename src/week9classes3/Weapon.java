@@ -1,6 +1,19 @@
 package week9classes3;
 
-public class Weapon extends GameItem {
+/*
+vehicles
+-drive
+-reverse
+-turn
+-get number of wheels
+electric vehicles
+gas vehicles
+cars
+trucks
+motorcycles
+ */
+
+public class Weapon extends GameItem implements Usable{
     private int damage;
 
     public Weapon(double x,double y,int damage){
@@ -22,12 +35,12 @@ public class Weapon extends GameItem {
 
     public static void main(String[] args) {
         Player p1=new Player(10);
-        GameItem w1=new Weapon(1,2,5);
+        Usable w1=new Weapon(1,2,5);
         w1.use(p1);
         System.out.println(w1);
         w1.move(3,4);
         System.out.println(w1);
-        GameItem h1=new HealthPotion(0,0,10);
+        Usable h1=new HealthPotion(0,0,10);
         HealthPotion h2=new HealthPotion(0,0,10);
         h1.move(2,2);
         p1.pickUp(w1);

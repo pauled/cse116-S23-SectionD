@@ -1,6 +1,6 @@
 package week9classes3;
 
-public class Transporter extends GameItem {
+public class Transporter extends GameItem implements Usable{
     private double dx;
     private double dy;
 

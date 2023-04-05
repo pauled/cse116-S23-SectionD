@@ -6,7 +6,7 @@ public class Player extends GameItem {
     private int maxHP;
     private int HP;
     private int damageDealt;
-    private ArrayList<GameItem> inventory;
+    private ArrayList<Usable> inventory;
 
     public Player(int maxHP){
         super(0,0);
@@ -39,7 +39,7 @@ public class Player extends GameItem {
         out+=this.damageDealt+super.toString();
         return out;
     }
-    public void pickUp(GameItem item){
+    public void pickUp(Usable item){
         this.inventory.add(item);
     }
     public void useInventoryItem(int location){
