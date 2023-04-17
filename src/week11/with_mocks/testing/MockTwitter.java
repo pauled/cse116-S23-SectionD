@@ -1,7 +1,7 @@
 package week11.with_mocks.testing;
 
-import week11.with_mocks.TwitterAPI;
-
+//import week11.with_mocks.TwitterAPI;
+/*
 public class MockTwitter implements TwitterAPI {
 
     // Make sure your mock is in your testing package
@@ -25,4 +25,4 @@ public class MockTwitter implements TwitterAPI {
         return mostRecentParameter;
     }
 
-}
+}*/

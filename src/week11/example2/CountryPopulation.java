@@ -38,7 +38,8 @@ public class CountryPopulation {
             double latitude = Double.parseDouble(splits.get(4));
             double longitude = Double.parseDouble(splits.get(5));
             Location location = new Location(latitude, longitude);
-            City city = new City(name, region, country, population, location);
+            //City city = new City(name, region, country, population, location);
+            City city = new City(country,region,name,population,location);
             if(!countries.containsKey(city.getCountry())){
                 countries.put(city.getCountry(), new ArrayList<>());
             }

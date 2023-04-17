@@ -5,7 +5,7 @@ import java.util.Map;
 import static java.util.Map.entry;
 
 public class TwitterUser {
-
+/*
     private final TwitterAPI twitterAPI;
     private String mood = "default";
 
@@ -40,5 +40,5 @@ public class TwitterUser {
         thing.setMood("anticipation");
         thing.tweetMood();
     }
-
+*/
 }
