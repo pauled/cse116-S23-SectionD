@@ -4,7 +4,7 @@ import org.junit.Test;
 import week11.with_mocks.TwitterUser;
 
 import static org.junit.Assert.assertEquals;
-/*
+
 public class TestTwitterUser {
 
     @Test
@@ -35,4 +35,3 @@ public class TestTwitterUser {
     }
 
 }
-*/
