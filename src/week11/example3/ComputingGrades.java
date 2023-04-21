@@ -16,7 +16,7 @@ public class ComputingGrades {
      * 67-69  D+
      * 63-66  D
      * 60-62  D-
-     * 0-60   F
+     * 0-59   F DAMN YOU JESSE!!!!!!
      * >100   Invalid Grade
      * <0     Invalid Grade
      */
@@ -30,17 +30,13 @@ public class ComputingGrades {
         if (score <= 100 && score >= 0) {
             if (tens >= 9) {
                 letterGrade = "A";
-            }
-            if (tens >= 8) {
+            } else if (tens >= 8) {
                 letterGrade = "B";
-            }
-            if (tens >= 7) {
+            } else if (tens >= 7) {
                 letterGrade = "C";
-            }
-            if (tens >= 6) {
+            } else if (tens >= 6) {
                 letterGrade = "D";
-            }
-            if (tens >= 0) {
+            } else if (tens >= 0) {
                 letterGrade = "F";
             }
         }
@@ -49,7 +45,9 @@ public class ComputingGrades {
 
     public static String plusMinus(int score) {
         String modifier = "";
-        if (score < 100 && score >= 0) {
+        if (score==100){
+            modifier="+";
+        } else if (score < 100 && score >= 60) {
             int ones = score % 10;
             if (ones >= 7) {
                 modifier = "+";
