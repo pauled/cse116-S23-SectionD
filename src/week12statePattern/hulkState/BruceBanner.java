@@ -1,4 +1,4 @@
-package week12statePattern;
+package week12statePattern.hulkState;
 
 public class BruceBanner {
     private State state=new DrBanner(this);
@@ -25,6 +25,10 @@ public class BruceBanner {
     public static void main(String[] args) {
         Car car=new Car();
         BruceBanner bruce=new BruceBanner();
+        bruce.fight();
+        bruce.makeAngry();
+        bruce.fight();
+
         bruce.useCar(car);
         bruce.makeAngry();
         bruce.useCar(car);

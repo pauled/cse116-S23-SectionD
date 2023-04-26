@@ -1,4 +1,4 @@
-package week12statePattern;
+package week12statePattern.hulkState;
 
 public interface State {
     public void makeAngry();

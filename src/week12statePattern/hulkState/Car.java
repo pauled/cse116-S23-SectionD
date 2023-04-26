@@ -1,4 +1,4 @@
-package week12statePattern;
+package week12statePattern.hulkState;
 
 public class Car {
     public boolean totaled;
