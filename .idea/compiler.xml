@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cse116" />
         <module name="cse116-S23-SectionD" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cse116-S23-SectionD" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
